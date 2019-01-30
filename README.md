@@ -5,24 +5,24 @@
 
 * pulseaudio has to be installed on your system
 
-On Host System, create conf file in $HOME and include main default.pa there:
+  * On Host System, create conf file in $HOME and include main default.pa there:
 
-**Ubutnu:**
-echo "
-.include /etc/pulse/default.pa
+	**Ubutnu:**
+	echo "
+	.include /etc/pulse/default.pa
 
-load-module module-native-protocol-tcp auth-ip-acl=172.17.0.1/24 auth-anonymous=1
-" > ~/.config/pulse/default.pa
+	load-module module-native-protocol-tcp auth-ip-acl=172.17.0.1/24 auth-anonymous=1
+	" > ~/.config/pulse/default.pa
 
-IP is the LAN subnet for which you allow the access from 
+	IP is the LAN subnet for which you allow the access from 
 
-**MacOS:**
+	**MacOS:**
 
-echo "
-.include /usr/local/etc/pulse/default.pa
+	echo "
+	.include /usr/local/etc/pulse/default.pa
 
-load-module module-native-protocol-tcp auth-ip-acl=172.17.0.1/24 auth-anonymous=1
-" > ~/.config/pulse/default.pa
+	load-module module-native-protocol-tcp auth-ip-acl=172.17.0.1/24 auth-anonymous=1
+	" > ~/.config/pulse/default.pa
 
 **Installation Requirements for CI/CD version**
 
