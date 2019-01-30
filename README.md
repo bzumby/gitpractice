@@ -1,6 +1,5 @@
 ## LUCY (CI/CD version) MANUAL
 
-
 **System Requirements**
 
 * pulseaudio has to be installed on your system
