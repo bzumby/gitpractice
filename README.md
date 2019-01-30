@@ -19,7 +19,7 @@
 	load-module module-native-protocol-tcp auth-ip-acl=172.17.0.1/24 auth-anonymous=1
 	" > ~/.config/pulse/default.pa
 
-	IP is the Docker LAN subnet from which you allow the access to PulseServer 
+  * IP is the Docker LAN subnet from which you allow the access to PulseServer 
 
 **Installation Requirements for CI/CD version**
 
