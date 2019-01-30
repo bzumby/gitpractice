@@ -24,11 +24,11 @@
 
 1. Initial Run
 * Run the following command inside Lucy working dir:
-**kubectl create -f kubernetes/deployment_k8s_lucy.yaml**
+	**kubectl create -f kubernetes/deployment_k8s_lucy.yaml**
 * this will create a pod with Lucy app and, if  pulseaudio is ON - Lucy will start working right away
 
 2. Hard Stop Lucy
-**kubectl delete deployment lucy-app-kube-dpl**
+	**kubectl delete deployment lucy-app-kube-dpl**
 * this will delete the deployment(kubernetes object) created for Lucy. 
 * The POD with lucy_app container will be destroyed. 
 * You'll have to perform the 'Initial Run' to start it again
@@ -36,6 +36,6 @@
 
 ### Rollback actions
 * Run the following command inside inside Lucy working dir
-**kubectl set image deployment.v1.apps/lucy-app-kube-dpl lucy-app-ctr=bzumby/lucy_app:v1.XXXX**
+	**kubectl set image deployment.v1.apps/lucy-app-kube-dpl lucy-app-ctr=bzumby/lucy_app:v1.XXXX**
 * Note that 'v1.XXXX' is the image tag of the stable version.
 * You have to explicitly specify it here  
